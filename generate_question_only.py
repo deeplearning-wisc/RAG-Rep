@@ -5,8 +5,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from understanding_rag.data import load_qa_dataset, question_from_prompt, write_json
-from understanding_rag.llm import generate_texts, judge_answers, make_llm, model_id, unload_llm
+from data import load_qa_dataset, question_from_prompt, write_json
+from llm import generate_texts, judge_answers, make_llm, model_id, unload_llm
 
 
 def parse_args() -> argparse.Namespace:

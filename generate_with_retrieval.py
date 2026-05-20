@@ -7,9 +7,9 @@ import random
 from pathlib import Path
 from typing import Any
 
-from understanding_rag.config import MAX_RETRIEVED_DOCS, RANDOM_SEED, RETRIEVAL_SETTINGS
-from understanding_rag.data import load_qa_dataset, question_from_prompt, read_json, read_jsonl, write_json
-from understanding_rag.llm import generate_texts, judge_answers, make_llm, model_id, unload_llm
+from config import MAX_RETRIEVED_DOCS, RANDOM_SEED, RETRIEVAL_SETTINGS
+from data import load_qa_dataset, question_from_prompt, read_json, read_jsonl, write_json
+from llm import generate_texts, judge_answers, make_llm, model_id, unload_llm
 
 
 def parse_args() -> argparse.Namespace:

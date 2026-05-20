@@ -11,9 +11,9 @@ from torch.cuda.amp import autocast
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from understanding_rag.config import BASE_MODEL_TO_INSTRUCTION_TOKENIZER, MODELS, RETRIEVAL_SETTINGS
-from understanding_rag.data import read_json, read_jsonl, write_json
-from understanding_rag.llm import is_base_model
+from config import BASE_MODEL_TO_INSTRUCTION_TOKENIZER, MODELS, RETRIEVAL_SETTINGS
+from data import read_json, read_jsonl, write_json
+from llm import is_base_model
 
 
 def parse_args() -> argparse.Namespace:

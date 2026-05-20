@@ -11,8 +11,8 @@ from vllm import LLM, SamplingParams
 from vllm.config import CompilationConfig, CompilationLevel
 from vllm.distributed.parallel_state import destroy_model_parallel
 
-from understanding_rag.config import JUDGE_MODEL, MODELS
-from understanding_rag.data import JUDGE_PROMPT
+from config import JUDGE_MODEL, MODELS
+from data import JUDGE_PROMPT
 
 GENERATION_PARAMS = SamplingParams(temperature=0, top_p=1, max_tokens=256, n=1)
 JUDGE_PARAMS = SamplingParams(temperature=0, top_p=1, max_tokens=20, n=1)

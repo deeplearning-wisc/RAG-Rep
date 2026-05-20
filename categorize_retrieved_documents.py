@@ -12,8 +12,8 @@ from typing import Any
 from openai import AzureOpenAI
 from tqdm import tqdm
 
-from understanding_rag.config import MAX_RETRIEVED_DOCS, RANDOM_SEED
-from understanding_rag.data import load_qa_dataset, read_jsonl, write_json
+from config import MAX_RETRIEVED_DOCS, RANDOM_SEED
+from data import load_qa_dataset, read_jsonl, write_json
 
 SYSTEM_PROMPT = """You are an objective evidence classifier. Given a user question (query), a list of possible answers (multiple choice or yes/no), and a single document, decide whether the document is **relevant**, **distracting**, or **neutral** with respect to answering the query.
 

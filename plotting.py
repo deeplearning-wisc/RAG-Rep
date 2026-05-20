@@ -12,7 +12,7 @@ import torch
 import torch.nn.functional as F
 from sklearn.decomposition import PCA
 
-from understanding_rag.config import DATASETS, INSTRUCTION_MODELS, BASE_MODELS, LAYER_SLICES, PLOT_COLORS
+from config import DATASETS, INSTRUCTION_MODELS, BASE_MODELS, LAYER_SLICES, PLOT_COLORS
 
 DIFFICULTIES = ("correct", "incorrect")
 
